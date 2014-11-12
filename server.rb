@@ -5,6 +5,7 @@ get '/' do
 end
 
 post '/post' do
+  puts params
   @name = params[:name]
   erb :index
 end
